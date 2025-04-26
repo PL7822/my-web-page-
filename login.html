@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #a0ded2, #e3caa0);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.523);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #9a9898;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #e4e8bd;
+        }
+
+        button {
+            width: 45%;
+            padding: 10px;
+            margin: 10px 5px;
+            background-color: #95d732;
+            color: rgb(246, 244, 244);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #msg {
+            margin-top: 10px;
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login / Sign Up</h2>
+
+        <input type="text" id="username" placeholder="Enter Username"><br>
+        <input type="password" id="password" placeholder="Enter Password"><br>
+
+        <button onclick="signUp()">Sign Up</button>
+        <button onclick="login()">Login</button>
+
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function signUp() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+                localStorage.setItem("savedUser", username);
+                localStorage.setItem("savedPass", password);
+                document.getElementById("msg").textContent = "✅ Sign Up Successful!";
+                document.getElementById("msg").style.color = "green";
+            } else {
+                document.getElementById("msg").textContent = "⚠️ Please enter both username and password.";
+                document.getElementById("msg").style.color = "red";
+            }
+        }
+
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            const savedUser = localStorage.getItem("savedUser");
+            const savedPass = localStorage.getItem("savedPass");
+
+            if (username === savedUser && password === savedPass) {
+                window.location.href = "index.html";
+            } else {
+                document.getElementById("msg").textContent = "❌ Invalid credentials. Try again.";
+                document.getElementById("msg").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
