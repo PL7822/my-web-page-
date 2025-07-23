@@ -19,6 +19,12 @@ This project showcases my personal information, skills, resume, hobbies, and my 
 - JavaScript
 - VS Code
 
+  # 🌐 My Personal Webpage
+
+This is a personal portfolio-style website designed and developed by **Pritam Pandurang Lendale**.
+
+![Personal Webpage Preview](Screenshot%202025-07-23%20103319.png)
+
 ## 🤝 Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/pritam-lendale-398172353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
