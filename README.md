@@ -19,11 +19,14 @@ This project showcases my personal information, skills, resume, hobbies, and my 
 - JavaScript
 - VS Code
 
-## 🧑‍💼 Author Info
-**Pritam Pandurang Lendale**  
+## 🤝 Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/pritam-lendale-398172353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- [GitHub](https://github.com/PL7822?tab=repositories)
+ 
 📧 Email: [pritamlendale@gmail.com](mailto:pritamlendale@gmail.com)  
-📱 Mobile: 7822058623  
-🎥 YouTube: [Prit_song's](https://www.youtube.com/@randam_podcast)
+  
+
 
 ## 📌 Note
 This is my personal project to represent myself online. All feedback and suggestions are welcome!
